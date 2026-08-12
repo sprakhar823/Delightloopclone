@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gifting Activity - Delightloop Agentic Outreach Platform</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/tables.css">
+  <link rel="stylesheet" href="css/badges.css">
+  <link rel="stylesheet" href="css/modals.css">
+  <link rel="stylesheet" href="css/assistant.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="dark-theme">
+  <div class="app-layout">
+    <!-- Shared Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="dashboard.html" class="logo">
+          <div class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <span class="logo-text">Delightloop</span>
+        </a>
+      </div>
+
+      <div class="sidebar-search">
+        <button class="search-btn" id="open-search-modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search navigation, contacts...</span>
+          <kbd class="kbd-badge">⌘K</kbd>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <a href="assistant.html" class="nav-item nav-item-ai">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.5 7.5"/><path d="M12 12v10"/><path d="M12 12l9.5-4.5"/></svg>
+            <span>Goalie Assistant</span>
+            <span class="ai-pill">AI</span>
+          </a>
+          
+          <a href="dashboard.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="inbox.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Inbox</span>
+            <span class="nav-badge">3</span>
+          </a>
+
+          <a href="surfaces.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>Surfaces</span>
+          </a>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-header">OUTREACH</div>
+          <a href="campaigns.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>Campaigns</span>
+          </a>
+          <a href="mailboxes.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/><path d="M22 7l-10 7L2 7"/><path d="M16 19h6"/><path d="M19 16l3 3-3 3"/></svg>
+            <span>Mailboxes</span>
+          </a>
+          <a href="express-send.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span>Express Send</span>
+          </a>
+          <a href="gifting-activity.html" class="nav-item active">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            <span>Gifting Activity</span>
+          </a>
+          <a href="templates.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span>Templates</span>
+          </a>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-header">DATA & ASSETS</div>
+          <a href="records.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Records</span>
+          </a>
+          <a href="discover.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 5.6-5.6 2 2-5.6z"/></svg>
+            <span>Discover</span>
+          </a>
+          <a href="assets.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Assets</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <div class="avatar">PS</div>
+          <div class="user-info">
+            <div class="user-name">Prakhar Singh</div>
+            <div class="user-email">prakhar@delightloop.com</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <header class="page-header">
+        <div class="header-title">
+          <h1>Gifting Activity</h1>
+          <p class="subtitle">Track gift delivery, recipient engagement, and campaign performance in real-time.</p>
+        </div>
+      </header>
+
+      <!-- Key Metrics Row -->
+      <section class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-header"><span class="metric-label">Recipients</span></div>
+          <div class="metric-value">150</div>
+          <div class="metric-subtext">Total targeted audience</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header"><span class="metric-label">Gifts Sent</span></div>
+          <div class="metric-value">142</div>
+          <div class="metric-subtext">Physical & digital gifts dispatched</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header"><span class="metric-label">Delivered</span></div>
+          <div class="metric-value text-success">138</div>
+          <div class="metric-subtext">Confirmed delivery by carrier/email</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header"><span class="metric-label">Acknowledged</span></div>
+          <div class="metric-value text-purple">89</div>
+          <div class="metric-subtext">62.6% acknowledgement rate</div>
+        </div>
+      </section>
+
+      <!-- Tabs & Controls -->
+      <section class="surfaces-controls">
+        <div class="tabs-nav-bar">
+          <button class="tab-item active">Recipients</button>
+          <button class="tab-item">My Recipients</button>
+          <button class="tab-item">Audience</button>
+          <button class="tab-item">Analytics</button>
+          <button class="tab-item">Insights</button>
+        </div>
+
+        <div class="search-filter-row">
+          <div class="search-box-md">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" placeholder="Search gifting activity by recipient, company, or gift name..." id="gifting-search-input">
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-secondary btn-sm">Filter Tags</button>
+            <button class="btn btn-ghost btn-sm">&bull;&bull;&bull; More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recipient Activity Table -->
+      <section class="dashboard-section">
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Recipient</th>
+                <th>Company & Role</th>
+                <th>Gift Item</th>
+                <th>Status</th>
+                <th>Tags</th>
+                <th>Key Dates</th>
+                <th>Insights</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Sarah Connor</strong></td>
+                <td>CrowdStrike &bull; VP Security</td>
+                <td>Premium Welcome Gift Box ($50)</td>
+                <td><span class="badge badge-completed">Claimed</span></td>
+                <td><span class="tag">Salesforce VIP</span></td>
+                <td>Aug 10, 2026</td>
+                <td>Confirmed shipping address on Surface</td>
+              </tr>
+
+              <tr>
+                <td><strong>Alex Rivera</strong></td>
+                <td>Datadog &bull; Head of IT</td>
+                <td>$25 Starbucks eGift Card</td>
+                <td><span class="badge badge-live">Delivered</span></td>
+                <td><span class="tag">eGift</span></td>
+                <td>Aug 10, 2026</td>
+                <td>Claimed digital code via email link</td>
+              </tr>
+
+              <tr>
+                <td><strong>Michael Scott</strong></td>
+                <td>Dunder Mifflin &bull; Regional Mgr</td>
+                <td>Delight Custom Mug Set</td>
+                <td><span class="badge badge-info">In Transit</span></td>
+                <td><span class="tag">Physical</span></td>
+                <td>Aug 09, 2026</td>
+                <td>Carrier Tracking #920183921</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Global Command Search Modal -->
+  <div id="search-modal" class="modal-backdrop hidden">
+    <div class="search-modal-container">
+      <div class="search-input-wrapper">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="global-search-input" placeholder="Search navigation, contacts, companies, events, and campaigns...">
+        <span class="kbd-badge">ESC</span>
+      </div>
+      <div class="search-results" id="search-results-list"></div>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/gifting-activity.js"></script>
+</body>
+</html>

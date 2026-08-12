@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover - Delightloop Agentic Outreach Platform</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/tables.css">
+  <link rel="stylesheet" href="css/badges.css">
+  <link rel="stylesheet" href="css/modals.css">
+  <link rel="stylesheet" href="css/assistant.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="dark-theme bg-slate-950 text-slate-100">
+  <div class="app-layout">
+    <!-- Shared Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="dashboard.html" class="logo">
+          <div class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <span class="logo-text">Delightloop</span>
+        </a>
+      </div>
+
+      <div class="sidebar-search">
+        <button class="search-btn" id="open-search-modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search navigation, contacts...</span>
+          <kbd class="kbd-badge">⌘K</kbd>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <a href="assistant.html" class="nav-item nav-item-ai">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.5 7.5"/><path d="M12 12v10"/><path d="M12 12l9.5-4.5"/></svg>
+            <span>Goalie Assistant</span>
+            <span class="ai-pill">AI</span>
+          </a>
+          
+          <a href="dashboard.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="inbox.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Inbox</span>
+            <span class="nav-badge">3</span>
+          </a>
+
+          <a href="surfaces.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>Surfaces</span>
+          </a>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-header">OUTREACH</div>
+          <a href="campaigns.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>Campaigns</span>
+          </a>
+          <a href="mailboxes.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/><path d="M22 7l-10 7L2 7"/><path d="M16 19h6"/><path d="M19 16l3 3-3 3"/></svg>
+            <span>Mailboxes</span>
+          </a>
+          <a href="express-send.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span>Express Send</span>
+          </a>
+          <a href="gifting-activity.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            <span>Gifting Activity</span>
+          </a>
+          <a href="templates.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span>Templates</span>
+          </a>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-header">DATA & ASSETS</div>
+          <a href="records.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Records</span>
+          </a>
+          <a href="discover.html" class="nav-item active">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 5.6-5.6 2 2-5.6z"/></svg>
+            <span>Discover</span>
+          </a>
+          <a href="assets.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Assets</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <div class="user-avatar">PS</div>
+          <div class="user-info">
+            <div class="user-name">Prakhar Singh</div>
+            <div class="user-email">prakhar@delightloop.com</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <header class="content-header">
+        <div class="header-title">
+          <h1>Discover & Prospecting</h1>
+          <p class="text-secondary">AI-driven prospect discovery and intent signals across 250M+ verified B2B profiles.</p>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            <span>Saved Searches</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="p-6 space-y-6">
+        <!-- Search & Filter Controls -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="relative flex-1">
+              <input type="text" placeholder="Search by Job Title, Company, Industry, or Keywords..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500">
+            </div>
+            <button class="btn btn-primary px-5 py-2.5">
+              <span>Search Leads</span>
+            </button>
+          </div>
+
+          <div class="flex items-center gap-3 text-xs flex-wrap">
+            <span class="text-slate-400 font-medium">Filter By:</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 cursor-pointer hover:border-purple-500">Industry: Cybersecurity, B2B SaaS</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 cursor-pointer hover:border-purple-500">Company Size: 100 - 1000</span>
+            <span class="px-3 py-1.5 rounded-lg bg-purple-950/60 border border-purple-800 text-purple-300 font-medium">Intent Score: 80%+</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 cursor-pointer hover:border-purple-500">Location: US & Canada</span>
+          </div>
+        </div>
+
+        <!-- Prospects Table -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+          <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="font-semibold text-sm">Discovered Prospects</span>
+              <span class="px-2 py-0.5 rounded-full bg-purple-950 text-purple-400 text-xs font-semibold">128 High-Intent Prospects</span>
+            </div>
+            <button class="text-xs text-purple-400 hover:text-purple-300 font-medium">+ Add Selected to Campaign</button>
+          </div>
+
+          <table class="w-full text-left text-xs text-slate-300">
+            <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider font-semibold border-b border-slate-800">
+              <tr>
+                <th class="p-4"><input type="checkbox" class="rounded bg-slate-900 border-slate-700"></th>
+                <th class="p-4">Contact & Role</th>
+                <th class="p-4">Company</th>
+                <th class="p-4">Intent Signal</th>
+                <th class="p-4">Location</th>
+                <th class="p-4 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/60">
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-4"><input type="checkbox" checked class="rounded bg-slate-900 border-slate-700"></td>
+                <td class="p-4">
+                  <div class="font-bold text-slate-100 text-sm">Sarah Jenkins</div>
+                  <div class="text-slate-400">VP of Sales Operations</div>
+                </td>
+                <td class="p-4">
+                  <div class="font-semibold text-slate-200">Acme Corp</div>
+                  <div class="text-slate-500">Enterprise B2B Software</div>
+                </td>
+                <td class="p-4">
+                  <span class="px-2.5 py-1 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 font-semibold text-[11px]">92 Intent Score</span>
+                </td>
+                <td class="p-4 text-slate-400">San Francisco, CA</td>
+                <td class="p-4 text-right">
+                  <button class="btn btn-secondary py-1 px-3 text-xs">Enroll Lead</button>
+                </td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-4"><input type="checkbox" checked class="rounded bg-slate-900 border-slate-700"></td>
+                <td class="p-4">
+                  <div class="font-bold text-slate-100 text-sm">Marcus Vance</div>
+                  <td class="p-4">
+                  <div class="font-semibold text-slate-200">TechFlow Systems</div>
+                  <div class="text-slate-500">DevOps & Cloud</div>
+                </td>
+                <td class="p-4">
+                  <span class="px-2.5 py-1 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 font-semibold text-[11px]">88 Intent Score</span>
+                </td>
+                <td class="p-4 text-slate-400">Austin, TX</td>
+                <td class="p-4 text-right">
+                  <button class="btn btn-secondary py-1 px-3 text-xs">Enroll Lead</button>
+                </td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="p-4"><input type="checkbox" class="rounded bg-slate-900 border-slate-700"></td>
+                <td class="p-4">
+                  <div class="font-bold text-slate-100 text-sm">Elena Rostova</div>
+                  <div class="text-slate-400">Head of Information Security</div>
+                </td>
+                <td class="p-4">
+                  <div class="font-semibold text-slate-200">Apex Systems</div>
+                  <div class="text-slate-500">Financial Technology</div>
+                </td>
+                <td class="p-4">
+                  <span class="px-2.5 py-1 rounded-full bg-purple-950 text-purple-400 border border-purple-800 font-semibold text-[11px]">85 Intent Score</span>
+                </td>
+                <td class="p-4 text-slate-400">New York, NY</td>
+                <td class="p-4 text-right">
+                  <button class="btn btn-secondary py-1 px-3 text-xs">Enroll Lead</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Search Command Palette Modal -->
+  <div class="modal hidden" id="search-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content search-modal-content">
+      <div class="search-modal-header">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="command-search-input" placeholder="Search navigation, contacts, companies, events, and campaigns..." autofocus>
+        <button class="modal-close" id="close-search-modal">ESC</button>
+      </div>
+      <div class="search-results-list" id="search-results-list"></div>
+    </div>
+  </div>
+
+  <script src="js/sidebar.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

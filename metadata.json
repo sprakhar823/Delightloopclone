@@ -1,0 +1,6 @@
+{
+  "name": "Delightloop - Agentic Outreach Platform",
+  "description": "SaaS Agentic Outreach Platform with Goalie AI Assistant, Campaigns, Inbox, Surfaces, Mailboxes, Express Send, Gifting Activity, and Templates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

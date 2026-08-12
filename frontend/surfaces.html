@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surfaces - Delightloop Agentic Outreach Platform</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/badges.css">
+  <link rel="stylesheet" href="css/modals.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/surfaces.css">
+</head>
+<body class="dark-theme">
+  <div class="app-layout">
+    <!-- Shared Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="dashboard.html" class="logo">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <span class="logo-text">Delightloop</span>
+        </a>
+      </div>
+
+      <div class="sidebar-search">
+        <button class="search-btn" id="open-search-modal">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search</span>
+          <kbd class="kbd-badge">⌘K</kbd>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <a href="assistant.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.5 7.5"/><path d="M12 12v10"/><path d="M12 12l9.5-4.5"/></svg>
+            <span>Goalie Assistant</span>
+          </a>
+          
+          <a href="dashboard.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="inbox.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Inbox</span>
+          </a>
+
+          <a href="surfaces.html" class="nav-item active">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>Surfaces</span>
+          </a>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-header">OUTREACH</div>
+          <a href="campaigns.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>Campaigns</span>
+          </a>
+          <a href="mailboxes.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/><path d="M22 7l-10 7L2 7"/><path d="M16 19h6"/><path d="M19 16l3 3-3 3"/></svg>
+            <span>Mailboxes</span>
+          </a>
+          <a href="express-send.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span>Express Send</span>
+          </a>
+          <a href="gifting-activity.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            <span>Gifting Activity</span>
+          </a>
+          <a href="templates.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span>Templates</span>
+          </a>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-header">DATA & ASSETS</div>
+          <a href="records.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Records</span>
+          </a>
+          <a href="discover.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 5.6-5.6 2 2-5.6z"/></svg>
+            <span>Discover</span>
+          </a>
+          <a href="assets.html" class="nav-item">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Assets</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <div class="avatar">PS</div>
+          <div class="user-info">
+            <div class="user-name">Prakhar Singh</div>
+            <div class="user-email">prakhar@delightloop.com</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content surfaces-page-container">
+      <!-- Top Title Header -->
+      <div class="surfaces-header-row">
+        <div class="surfaces-title-wrap">
+          <h1>Surfaces</h1>
+          <p>Build personalised landing pages that convert. Every visitor sees a page made for them.</p>
+        </div>
+        <div class="surfaces-header-actions">
+          <div class="surfaces-segmented-control">
+            <button class="surfaces-seg-btn active" data-tab="all">All templates</button>
+            <button class="surfaces-seg-btn" data-tab="org">Organization</button>
+            <button class="surfaces-seg-btn" data-tab="global">Global</button>
+          </div>
+          <button class="new-surface-btn" id="create-surface-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            <span>+ New Surface</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Search Input -->
+      <div class="surfaces-search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="surface-template-search" placeholder="Search templates...">
+      </div>
+
+      <!-- Circular Icon Categories -->
+      <div class="category-circles-row">
+        <button class="category-circle-item active" data-category="all">
+          <div class="category-icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <span>All</span>
+        </button>
+
+        <button class="category-circle-item" data-category="event">
+          <div class="category-icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <span>Event</span>
+        </button>
+
+        <button class="category-circle-item" data-category="abm">
+          <div class="category-icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <span>ABM</span>
+        </button>
+
+        <button class="category-circle-item" data-category="pipeline">
+          <div class="category-icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 20V4"/></svg>
+          </div>
+          <span>Pipeline</span>
+        </button>
+
+        <button class="category-circle-item" data-category="meeting">
+          <div class="category-icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span>Meeting</span>
+        </button>
+
+        <button class="category-circle-item" data-category="address">
+          <div class="category-icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <span>Address</span>
+        </button>
+
+        <button class="category-circle-item" data-category="feedback">
+          <div class="category-icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <span>Feedback</span>
+        </button>
+
+        <button class="category-circle-item" data-category="branding">
+          <div class="category-icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span>Branding</span>
+        </button>
+
+        <button class="category-circle-item" data-category="drafted">
+          <div class="category-icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <span>Drafted</span>
+        </button>
+      </div>
+
+      <!-- Templates Section Grid -->
+      <div class="templates-section-wrap">
+        <div class="templates-header-row">
+          <h2>Templates</h2>
+          <a href="#" class="browse-all-link">
+            <span>Browse all</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <div class="surfaces-grid" id="surfaces-grid-container">
+          <!-- Card 0: Blank Template -->
+          <div class="blank-template-card" id="blank-template-trigger">
+            <div class="blank-circle-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <h3 class="blank-card-title">New blank template</h3>
+            <p class="blank-card-desc">Start from scratch with a custom design</p>
+          </div>
+
+          <!-- Card 1: Delight Choice - Address Confirmation -->
+          <div class="surface-card-item" data-title="Delight Choice - Address Confirmation" data-category="address">
+            <div class="surface-card-preview bg-preview-1">
+              <div>
+                <div class="preview-pill-tag">MULTIPLE OPTIONS</div>
+                <div class="preview-headline">Your invite.<br>Pick your gift.</div>
+                <div class="preview-subheadline">Choose your favorite gift, then continue</div>
+              </div>
+              <div class="preview-action-btn">CHOOSE YOUR GIFT →</div>
+            </div>
+            <div class="surface-card-body">
+              <span class="surface-badge-label">ADDRESS</span>
+              <h3 class="surface-title-text">Delight Choice - Address Confirmation</h3>
+              <p class="surface-desc-text">Select your gift, then confirm your address to receive it as...</p>
+              <button class="use-template-action-btn">Use template</button>
+            </div>
+          </div>
+
+          <!-- Card 2: Boost Registration Invitation -->
+          <div class="surface-card-item" data-title="Boost Registration Invitation" data-category="event">
+            <div class="surface-card-preview bg-preview-2">
+              <div>
+                <div class="preview-pill-tag">PERSONAL INVITATIONS</div>
+                <div class="preview-headline">Make every invite<br>feel personal.</div>
+                <div class="preview-subheadline">Add name, video & message to every post</div>
+              </div>
+              <div class="preview-action-btn">Create your invite →</div>
+            </div>
+            <div class="surface-card-body">
+              <span class="surface-badge-label">EVENT</span>
+              <h3 class="surface-title-text">Boost Registration Invitation</h3>
+              <p class="surface-desc-text">Personalized invitation page for boost registration event flow.</p>
+              <button class="use-template-action-btn">Use template</button>
+            </div>
+          </div>
+
+          <!-- Card 3: Booth Giveaway: Choose Your Gift -->
+          <div class="surface-card-item" data-title="Booth Giveaway: Choose Your Gift" data-category="address">
+            <div class="surface-card-preview bg-preview-3">
+              <div>
+                <div class="preview-pill-tag">THANK YOU FOR YOUR TIME</div>
+                <div class="preview-headline">You gave us<br>your time.<br>Take something back.</div>
+              </div>
+              <div class="preview-action-btn">TAKE YOUR PICK →</div>
+            </div>
+            <div class="surface-card-body">
+              <span class="surface-badge-label">ADDRESS</span>
+              <h3 class="surface-title-text">Booth Giveaway: Choose Your Gift</h3>
+              <p class="surface-desc-text">pick from the lineup, choose pickup or ship, and grab your...</p>
+              <button class="use-template-action-btn">Use template</button>
+            </div>
+          </div>
+
+          <!-- Card 4: Booth Giveaway: Pick Your Card -->
+          <div class="surface-card-item" data-title="Booth Giveaway: Pick Your Card" data-category="address">
+            <div class="surface-card-preview bg-preview-4">
+              <div>
+                <div class="preview-pill-tag">FOR YOU</div>
+                <div class="preview-headline">You gave us<br>your time.<br>Take something back.</div>
+                <div class="preview-subheadline">Pick a card to reveal prize</div>
+              </div>
+              <div class="preview-action-btn">Pick a card</div>
+            </div>
+            <div class="surface-card-body">
+              <span class="surface-badge-label">ADDRESS</span>
+              <h3 class="surface-title-text">Booth Giveaway: Pick Your Card</h3>
+              <p class="surface-desc-text">Flip one of three cards. Every card wins something worth...</p>
+              <button class="use-template-action-btn">Use template</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/surfaces.js"></script>
+</body>
+</html>

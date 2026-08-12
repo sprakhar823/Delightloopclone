@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Delightloop Agentic Outreach Platform</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/tables.css">
+  <link rel="stylesheet" href="css/badges.css">
+  <link rel="stylesheet" href="css/modals.css">
+  <link rel="stylesheet" href="css/assistant.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="dark-theme">
+  <div class="app-layout">
+    <!-- Shared Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="dashboard.html" class="logo">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <span class="logo-text">Delightloop</span>
+        </a>
+      </div>
+
+      <div class="sidebar-search">
+        <button class="search-btn" id="open-search-modal">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search</span>
+          <kbd class="kbd-badge">⌘K</kbd>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="assistant.html" class="nav-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          <span>Goalie Assistant</span>
+        </a>
+        
+        <a href="dashboard.html" class="nav-item active">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="inbox.html" class="nav-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Inbox</span>
+        </a>
+
+        <a href="surfaces.html" class="nav-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span>Surfaces</span>
+        </a>
+
+        <!-- Collapsible Group: Outreach -->
+        <div class="nav-collapsible-group">
+          <div class="nav-item nav-item-parent">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12A10 10 0 0 0 12 2v10z"/><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            <span>Outreach</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="nav-submenu">
+            <a href="campaigns.html" class="nav-subitem">Campaigns</a>
+            <a href="mailboxes.html" class="nav-subitem">Mailboxes</a>
+            <a href="express-send.html" class="nav-subitem">Express Send</a>
+            <a href="gifting-activity.html" class="nav-subitem">Gifting Activity</a>
+            <a href="templates.html" class="nav-subitem">Templates</a>
+          </div>
+        </div>
+
+        <!-- Collapsible Group: Records -->
+        <div class="nav-collapsible-group">
+          <div class="nav-item nav-item-parent">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Records</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="nav-submenu">
+            <a href="records.html" class="nav-subitem">Contacts & Leads</a>
+          </div>
+        </div>
+
+        <!-- Collapsible Group: Discover -->
+        <div class="nav-collapsible-group">
+          <div class="nav-item nav-item-parent">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 5.6-5.6 2 2-5.6z"/></svg>
+            <span>Discover</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="nav-submenu">
+            <a href="discover.html" class="nav-subitem">Signals & Leads</a>
+          </div>
+        </div>
+
+        <!-- Collapsible Group: Assets -->
+        <div class="nav-collapsible-group">
+          <div class="nav-item nav-item-parent">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Assets</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="nav-submenu">
+            <a href="assets.html" class="nav-subitem">Asset Library</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="theme-toggle-row">
+          <button class="theme-toggle-btn active" data-theme="dark-theme" title="Dark Theme">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <button class="theme-toggle-btn" data-theme="light-theme" title="Light Theme">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+          </button>
+        </div>
+
+        <div class="user-profile">
+          <div class="avatar-wrap">
+            <div class="avatar">PS</div>
+            <span class="status-online-dot"></span>
+          </div>
+          <div class="user-info">
+            <div class="user-name">Prakhar Singh</div>
+            <div class="user-email">prakhar@delightloop.com</div>
+          </div>
+          <svg class="profile-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 15 12 20 17 15"/><polyline points="7 9 12 4 17 9"/></svg>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Welcome Banner -->
+      <header class="page-header">
+        <div class="header-title">
+          <h1>Welcome back, Prakhar</h1>
+          <p class="subtitle">Welcome to your personalized dashboard!</p>
+        </div>
+        <div class="header-actions">
+          <a href="campaigns.html" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            <span>New Campaign</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Key Metrics Row -->
+      <section class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-label">Gifts Delivered</span>
+            <span class="metric-timeframe">last 30 days</span>
+          </div>
+          <div class="metric-value">0</div>
+          <div class="metric-subtext">No gifts delivered this period</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-label">Acknowledgement Rate</span>
+            <span class="metric-timeframe">last 30 days</span>
+          </div>
+          <div class="metric-value">0%</div>
+          <div class="metric-subtext">0 of 0 gifts acknowledged</div>
+        </div>
+
+        <div class="metric-card metric-highlight">
+          <div class="metric-header">
+            <span class="metric-label">Wallet Balance</span>
+            <span class="metric-badge">Active</span>
+          </div>
+          <div class="metric-value wallet-value">$548,290</div>
+          <div class="metric-subtext">Ready for gift & campaign allocation</div>
+        </div>
+      </section>
+
+      <!-- Active Campaigns Section -->
+      <section class="dashboard-section">
+        <div class="section-header">
+          <h2>Active Campaigns</h2>
+          <a href="campaigns.html" class="view-all-link">View all 850 campaigns &rarr;</a>
+        </div>
+
+        <div class="campaign-grid">
+          <!-- Campaign Card 1 -->
+          <div class="campaign-card-ref">
+            <div class="campaign-ref-tags">
+              <span class="pill-tag">Drive Event</span>
+              <span class="pill-tag pill-tag-blue">Thank You</span>
+            </div>
+            
+            <div class="campaign-metrics-box">
+              <div class="metric-col text-center">
+                <span class="col-label">Recipients</span>
+                <span class="col-value text-lg">1</span>
+              </div>
+              <div class="metric-col text-center">
+                <span class="col-label">Highlight</span>
+                <span class="col-value">-</span>
+              </div>
+              <div class="metric-col text-center">
+                <span class="col-label">Dates</span>
+                <span class="col-value dates-val">24/06/26 - 28/06/26</span>
+              </div>
+            </div>
+
+            <div class="campaign-status-block">
+              <span class="status-label">Status</span>
+              <div class="status-indicator-bar bar-green"></div>
+              <div class="status-legend">
+                <span class="legend-item legend-green"><span class="dot"></span> Ready (1)</span>
+              </div>
+            </div>
+
+            <div class="campaign-progress-block">
+              <div class="progress-top-row">
+                <span>Completed</span>
+                <span>100%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill-purple" style="width: 100%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Campaign Card 2 -->
+          <div class="campaign-card-ref">
+            <div class="campaign-ref-tags">
+              <span class="pill-tag">Drive Event</span>
+              <span class="pill-tag pill-tag-blue">Thank You</span>
+            </div>
+            
+            <div class="campaign-metrics-box">
+              <div class="metric-col text-center">
+                <span class="col-label">Recipients</span>
+                <span class="col-value text-lg">2</span>
+              </div>
+              <div class="metric-col text-center">
+                <span class="col-label">Highlight</span>
+                <span class="col-value">-</span>
+              </div>
+              <div class="metric-col text-center">
+                <span class="col-label">Dates</span>
+                <span class="col-value dates-val">24/06/26 - 30/06/26</span>
+              </div>
+            </div>
+
+            <div class="campaign-status-block">
+              <span class="status-label">Status</span>
+              <div class="status-indicator-bar bar-yellow"></div>
+              <div class="status-legend">
+                <span class="legend-item legend-yellow"><span class="dot"></span> Pending (2)</span>
+                <span class="legend-item legend-blue"><span class="dot"></span> Transit (0)</span>
+              </div>
+            </div>
+
+            <div class="campaign-progress-block">
+              <div class="progress-top-row">
+                <span>Completed</span>
+                <span>100%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill-purple" style="width: 100%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Campaign Card 3 -->
+          <div class="campaign-card-ref">
+            <div class="campaign-ref-tags">
+              <span class="pill-tag">Drive Event</span>
+              <span class="pill-tag pill-tag-blue">Booth Giveaways</span>
+            </div>
+            
+            <div class="campaign-metrics-box">
+              <div class="metric-col text-center">
+                <span class="col-label">Recipients</span>
+                <span class="col-value text-lg">0</span>
+              </div>
+              <div class="metric-col text-center">
+                <span class="col-label">Highlight</span>
+                <span class="col-value">-</span>
+              </div>
+              <div class="metric-col text-center">
+                <span class="col-label">Dates</span>
+                <span class="col-value dates-val">19/06/26 - 29/06/26</span>
+              </div>
+            </div>
+
+            <div class="campaign-status-block">
+              <span class="status-label">Status</span>
+              <div class="status-indicator-bar bar-white"></div>
+              <div class="status-legend">
+                <span class="legend-item legend-yellow"><span class="dot"></span> Pending (0)</span>
+                <span class="legend-item legend-blue"><span class="dot"></span> Transit (0)</span>
+              </div>
+            </div>
+
+            <div class="campaign-progress-block">
+              <div class="progress-top-row">
+                <span>Completed</span>
+                <span>100%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill-purple" style="width: 100%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Feature Cards: Recent Campaign Activity, Delight Engage, Delight Sense -->
+      <section class="dashboard-bottom-grid">
+        <!-- Card 1: Recent Campaign Activity -->
+        <div class="bottom-feature-card">
+          <div class="feature-card-header">
+            <div class="feature-icon-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12A10 10 0 0 0 12 2v10z"/><path d="M18 8a6 6 0 0 0-6-6v6z"/><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </div>
+            <h3 class="feature-card-title">Recent Campaign Activity</h3>
+          </div>
+
+          <div class="feature-card-body empty-activity-body">
+            <div class="empty-card-graphic">
+              <div class="graphic-card-shape">
+                <div class="graphic-chip"></div>
+                <div class="graphic-circles">
+                  <span></span><span></span>
+                </div>
+                <div class="graphic-alert-badge">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                </div>
+              </div>
+            </div>
+            <h4 class="empty-state-heading">No activity yet</h4>
+            <p class="empty-state-subtext">Your campaign activity will appear here once you create and launch your first campaign.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Delight Engage -->
+        <div class="bottom-feature-card">
+          <div class="feature-card-header">
+            <div class="feature-icon-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="feature-card-title">Delight Engage</h3>
+          </div>
+
+          <div class="feature-card-body">
+            <p class="feature-card-text">
+              Delight Engage helps you deliver the right message through the right channel at the right time. Our AI-powered platform crafts personalized outreach campaigns, suggests optimal channels, and recommends physical or digital gifts that resonate with your prospects and customers.
+            </p>
+            <button class="btn-activate-feature" id="activate-engage-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/></svg>
+              <span>Activate DelightEngage</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: Delight Sense -->
+        <div class="bottom-feature-card">
+          <div class="feature-card-header">
+            <div class="feature-icon-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            </div>
+            <h3 class="feature-card-title">Delight Sense</h3>
+          </div>
+
+          <div class="feature-card-body">
+            <p class="feature-card-text">
+              DelightSense helps you identify the right time to nurture your leads based on real-time engagement patterns, buying signals, job changes, CRM behavior, and more.
+            </p>
+            <button class="btn-activate-feature" id="activate-sense-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/></svg>
+              <span>Activate DelightSense</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Global Command Search Modal -->
+  <div id="search-modal" class="modal-backdrop hidden">
+    <div class="search-modal-container">
+      <div class="search-input-wrapper">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="global-search-input" placeholder="Search navigation, contacts, companies, events, and campaigns..." autofocus>
+        <span class="kbd-badge">ESC</span>
+      </div>
+      <div class="search-results" id="search-results-list">
+        <div class="search-category">
+          <div class="category-title">NAVIGATION</div>
+          <a href="assistant.html" class="search-result-item">
+            <span class="result-title">Goalie Assistant</span>
+            <span class="result-sub">Ask AI about outreach, leads & campaigns</span>
+          </a>
+          <a href="campaigns.html" class="search-result-item">
+            <span class="result-title">Campaigns</span>
+            <span class="result-sub">850 total outreach campaigns</span>
+          </a>
+          <a href="surfaces.html" class="search-result-item">
+            <span class="result-title">Surfaces</span>
+            <span class="result-sub">Personalized landing page templates</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goalie Assistant - Delightloop Agentic Outreach Platform</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/tables.css">
+  <link rel="stylesheet" href="css/badges.css">
+  <link rel="stylesheet" href="css/modals.css">
+  <link rel="stylesheet" href="css/assistant.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="dark-theme">
+  <div class="app-layout">
+    <!-- Shared Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="dashboard.html" class="logo">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <span class="logo-text">Delightloop</span>
+        </a>
+      </div>
+
+      <div class="sidebar-search">
+        <button class="search-btn" id="open-search-modal">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search</span>
+          <kbd class="kbd-badge">⌘K</kbd>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="assistant.html" class="nav-item active">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          <span>Goalie Assistant</span>
+        </a>
+        
+        <a href="dashboard.html" class="nav-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="inbox.html" class="nav-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Inbox</span>
+        </a>
+
+        <a href="surfaces.html" class="nav-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span>Surfaces</span>
+        </a>
+
+        <!-- Collapsible Group: Outreach -->
+        <div class="nav-collapsible-group">
+          <div class="nav-item nav-item-parent">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12A10 10 0 0 0 12 2v10z"/><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            <span>Outreach</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="nav-submenu">
+            <a href="campaigns.html" class="nav-subitem">Campaigns</a>
+            <a href="mailboxes.html" class="nav-subitem">Mailboxes</a>
+            <a href="express-send.html" class="nav-subitem">Express Send</a>
+            <a href="gifting-activity.html" class="nav-subitem">Gifting Activity</a>
+            <a href="templates.html" class="nav-subitem">Templates</a>
+          </div>
+        </div>
+
+        <!-- Collapsible Group: Records -->
+        <div class="nav-collapsible-group">
+          <div class="nav-item nav-item-parent">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Records</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="nav-submenu">
+            <a href="records.html" class="nav-subitem">Contacts & Leads</a>
+          </div>
+        </div>
+
+        <!-- Collapsible Group: Discover -->
+        <div class="nav-collapsible-group">
+          <div class="nav-item nav-item-parent">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 5.6-5.6 2 2-5.6z"/></svg>
+            <span>Discover</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="nav-submenu">
+            <a href="discover.html" class="nav-subitem">Signals & Leads</a>
+          </div>
+        </div>
+
+        <!-- Collapsible Group: Assets -->
+        <div class="nav-collapsible-group">
+          <div class="nav-item nav-item-parent">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Assets</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="nav-submenu">
+            <a href="assets.html" class="nav-subitem">Asset Library</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="theme-toggle-row">
+          <button class="theme-toggle-btn active" data-theme="dark-theme" title="Dark Theme">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <button class="theme-toggle-btn" data-theme="light-theme" title="Light Theme">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+          </button>
+        </div>
+
+        <div class="user-profile">
+          <div class="avatar-wrap">
+            <div class="avatar">PS</div>
+            <span class="status-online-dot"></span>
+          </div>
+          <div class="user-info">
+            <div class="user-name">Prakhar Singh</div>
+            <div class="user-email">prakhar@delightloop.com</div>
+          </div>
+          <svg class="profile-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 15 12 20 17 15"/><polyline points="7 9 12 4 17 9"/></svg>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content assistant-page-layout">
+      <div class="assistant-chat-section">
+        <header class="page-header">
+          <div class="header-title">
+            <div class="title-with-badge">
+              <h1>Goalie Assistant</h1>
+              <span class="badge badge-purple">Agentic AI</span>
+            </div>
+            <p class="subtitle">Cold outreach, contacts, campaigns, surfaces — ask anything.</p>
+          </div>
+        </header>
+
+        <!-- Assistant Chat History / Stream Area -->
+        <div class="assistant-chat-container" id="assistant-chat-stream">
+          <!-- Empty State Greeting -->
+          <div class="assistant-empty-state" id="assistant-welcome">
+            <div class="assistant-sparkle-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z"/></svg>
+            </div>
+            <h2>What can I help with today?</h2>
+            <p>Select an agentic action below or type your custom outreach request.</p>
+
+            <div class="suggestion-grid">
+              <button class="suggestion-card" data-prompt="Find last month's leads in Salesforce">
+                <span class="suggestion-text">"Find last month's leads in Salesforce"</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+
+              <button class="suggestion-card" data-prompt="List gift-delivered recipients in Campaign X">
+                <span class="suggestion-text">"List gift-delivered recipients in Campaign X"</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+
+              <button class="suggestion-card" data-prompt="Create a landing page for Q3 outreach">
+                <span class="suggestion-text">"Create a landing page for Q3 outreach"</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+
+              <button class="suggestion-card" data-prompt="Add all uncontacted leads to a campaign">
+                <span class="suggestion-text">"Add all uncontacted leads to a campaign"</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Input Form -->
+        <div class="assistant-input-container">
+          <form id="assistant-form" class="assistant-input-box">
+            <textarea id="assistant-input" placeholder="Ask Goalie anything about your outreach..." rows="2"></textarea>
+            <div class="input-actions">
+              <div class="input-options">
+                <span class="input-hint">Press Enter to send, Shift+Enter for new line</span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm" id="send-ai-btn">
+                <span>Ask Goalie</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Panel: MCP Connectors -->
+      <aside class="mcp-connectors-panel">
+        <div class="mcp-header">
+          <h3>MCP Connectors</h3>
+          <span class="badge badge-outline">Live Sync</span>
+        </div>
+        <p class="mcp-description">Model Context Protocol integrations allow Goalie to query real-time CRM and account data.</p>
+
+        <div class="connector-list">
+          <div class="connector-card">
+            <div class="connector-icon icon-sf">SF</div>
+            <div class="connector-details">
+              <div class="connector-name">Salesforce</div>
+              <div class="connector-status status-connected">
+                <span class="status-dot"></span>
+                <span>Connected</span>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-xs">Manage</button>
+          </div>
+
+          <div class="connector-card">
+            <div class="connector-icon icon-attio">AT</div>
+            <div class="connector-details">
+              <div class="connector-name">Attio</div>
+              <div class="connector-status status-connected">
+                <span class="status-dot"></span>
+                <span>Connected</span>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-xs">Manage</button>
+          </div>
+        </div>
+
+        <div class="mcp-footer">
+          <button class="btn btn-secondary btn-full" id="connect-apps-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            <span>Connect Apps</span>
+          </button>
+          <div class="integrations-count">99 integrations available</div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Global Command Search Modal -->
+  <div id="search-modal" class="modal-backdrop hidden">
+    <div class="search-modal-container">
+      <div class="search-input-wrapper">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="global-search-input" placeholder="Search navigation, contacts, companies, events, and campaigns...">
+        <span class="kbd-badge">ESC</span>
+      </div>
+      <div class="search-results" id="search-results-list"></div>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/assistant.js"></script>
+</body>
+</html>
