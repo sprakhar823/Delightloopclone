@@ -7,6 +7,10 @@ const PORT = 3000;
 
 app.use(express.json());
 
+// Health check endpoint for Cloud hosting / Render
+app.get('/healthz', (req, res) => res.status(200).send('OK'));
+app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
+
 // Lazy-initialize Gemini AI Client
 function getGeminiClient() {
   const apiKey = process.env.GEMINI_API_KEY;
